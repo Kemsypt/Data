@@ -1,0 +1,1380 @@
+{
+	"spell": [
+		{
+			"name": "Rune of Arcane Armour",
+			"source": "Ancient Spells",
+			"level": 1,
+			"school": "A",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+				"m": "Runic oil worth 10 gp and a leather armband"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 12
+					}
+				}
+			],
+			"meta": {
+				"ritual": true
+			},
+			"entries": [
+				"You inscribe this rune onto a creature, surrounding them with protective runes of force. While the target is not wearing armour or using a shield, its AC becomes 13 + its Dexterity modifier."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When inscribed using a 3rd-level rune slot, the target's AC becomes 14 + Dexterity modifier. At a 5th-level slot, it becomes 15 + Dexterity modifier. At a 7th-level slot, it becomes 16 + Dexterity modifier. At a 9th-level slot, it becomes 17 + Dexterity modifier."
+					]
+				}
+			],
+			"damageInflict": [
+				"force"
+			],
+			"miscTags": [
+				"HL"
+			]
+		},
+		{
+			"name": "Rune of Friction",
+			"source": "Ancient Spells",
+			"level": 1,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+				"m": "Runic oil worth 10 gp"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 10
+					}
+				}
+			],
+			"meta": {
+				"ritual": true
+			},
+			"entries": [
+				"Inscribe a rune to make a surface slippery or sticky. The next creature to move across it must succeed on a Dexterity saving throw or fall prone.",
+				"If the rune is inverted, the surface becomes sticky, halving normal walking speed."
+			],
+			"savingThrow": [
+				"dexterity"
+			],
+			"conditionInflict": [
+				"prone"
+			],
+			"miscTags": [
+				"OBJ"
+			]
+		},
+		{
+			"name": "Rune of Gravity",
+			"source": "Ancient Spells",
+			"level": 1,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+				"m": "Runic oil worth 10 gp"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 10
+					}
+				}
+			],
+			"meta": {
+				"ritual": true
+			},
+			"entries": [
+				"Inscribe a rune on the ground to create an area of weightlessness. The rune covers a 5-foot square, extending upwards for 30 feet.",
+				"Creatures entering the area float weightlessly until they reach the top or leave the space. Affected creatures may attempt a Strength saving throw to cling to the ground and avoid being lifted."
+			],
+			"savingThrow": [
+				"strength"
+			]
+		},
+		{
+			"name": "Rune of Muffle",
+			"source": "Ancient Spells",
+			"level": 1,
+			"school": "I",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+				"m": "Runic oil worth 5 gp and a strip of cloth"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"meta": {
+				"ritual": true
+			},
+			"entries": [
+				"Inscribing this rune upon a willing creature suppresses its sound. While affected, the creature suffers no penalties to Dexterity (Stealth) checks due to armour, and all other creatures have disadvantage on Wisdom (Perception) checks made to hear it.",
+				"If the creature speaks above a whisper, the rune immediately breaks."
+			]
+		},
+		{
+			"name": "Rune of Resting Paws",
+			"source": "Ancient Spells",
+			"level": 1,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"m": "Runic oil worth 10 gp and a nightcap"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"meta": {
+				"ritual": true
+			},
+			"entries": [
+				"By inscribing this rune, you take the form of a small cat, using the Cat stat block for the duration. Any damage taken immediately ends the effect and transfers the damage to your true hit points."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When inscribed using a 2nd-level rune slot or higher, you may also expend one hit die per minute while in cat form to heal as if you had taken a short rest. This does not refresh any abilities that normally recharge on a short rest."
+					]
+				}
+			],
+			"miscTags": [
+				"HL"
+			]
+		},
+		{
+			"name": "Rune of Shielding",
+			"source": "Ancient Spells",
+			"level": 1,
+			"school": "A",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+				"m": "Runic oil worth 10 gp"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					}
+				}
+			],
+			"meta": {
+				"ritual": true
+			},
+			"entries": [
+				"Inscribe a rune upon the ground to ward that space. The rune takes up a 5-foot square. Any creature standing in the square gains half cover against all attacks and effects."
+			]
+		},
+		{
+			"name": "Rune of Adhesion",
+			"source": "Ancient Spells",
+			"level": 2,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+				"m": "Runic oil worth 50 gp"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 1
+					}
+				}
+			],
+			"meta": {
+				"ritual": true
+			},
+			"entries": [
+				"Inscribe a rune on a surface to create a powerful adhesive. The next object or creature touching the surface becomes stuck.",
+				"The creature may attempt a Strength saving throw against your spell DC to free itself. On a success, the target is freed. On a failure, the creature becomes Grappled."
+			],
+			"savingThrow": [
+				"strength"
+			],
+			"conditionInflict": [
+				"grappled"
+			],
+			"miscTags": [
+				"OBJ"
+			]
+		},
+		{
+			"name": "Rune of Illumination",
+			"source": "Ancient Spells",
+			"level": 2,
+			"school": "I",
+			"time": [
+				{
+					"number": 1,
+					"unit": "minute"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+				"m": "Runic oil worth 50 gp"
+			},
+			"duration": [
+				{
+					"type": "permanent",
+					"ends": [
+						"dispel"
+					]
+				}
+			],
+			"meta": {
+				"ritual": true
+			},
+			"entries": [
+				"Place a rune on a willing creature to cloak it in illusion. The creature appears as a humanoid of the same size with basic features.",
+				"Physical inspection reveals the illusion, and creatures may attempt an Intelligence (Investigation) check against your spell DC to disbelieve it."
+			],
+			"savingThrow": [
+				"dexterity"
+			]
+		},
+		{
+			"name": "Rune of Mending",
+			"source": "Ancient Spells",
+			"level": 2,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "minute"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+				"m": "Runic oil worth 10 gp"
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"meta": {
+				"ritual": true
+			},
+			"entries": [
+				"Inscribe a rune upon a broken object or surface. The rune repairs damage no larger than a 1-foot cube, fusing shattered materials such as wood, stone, glass, or metal back together.",
+				"For larger items, multiple applications may be required. This rune cannot restore magical properties to destroyed items."
+			],
+			"miscTags": [
+				"OBJ"
+			]
+		},
+		{
+			"name": "Rune of Perfect Recall",
+			"source": "Ancient Spells",
+			"level": 2,
+			"school": "D",
+			"time": [
+				{
+					"number": 1,
+					"unit": "minute"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"m": "Runic oil worth 15 gp and a handful of coffee beans"
+			},
+			"duration": [
+				{
+					"type": "special"
+				}
+			],
+			"meta": {
+				"ritual": true
+			},
+			"entries": [
+				"By inscribing this rune, you instantly memorize the text of a book or piece of writing that you have read in the past 24 hours, as though you had spent a full day studying it. The memory eventually fades unless reinforced.",
+				{
+					"type": "entries",
+					"name": "Duration by Slot Level",
+					"entries": [
+						{
+							"type": "list",
+							"items": [
+								"Base: The memory lasts 1 day.",
+								"3rd-level rune slot: The memory lasts 1 week.",
+								"5th-level rune slot: The memory lasts 1 month.",
+								"7th-level rune slot or higher: The memory becomes permanent."
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Rune of Replication",
+			"source": "Ancient Spells",
+			"level": 2,
+			"school": "I",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+				"m": "Runic oil worth 15 gp and a carved wooden stamp"
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"meta": {
+				"ritual": true
+			},
+			"entries": [
+				"When inscribed upon an object containing writing or imagery, this rune instantly duplicates the markings onto another surface of your choice.",
+				{
+					"type": "entries",
+					"name": "Details",
+					"entries": [
+						{
+							"type": "list",
+							"items": [
+								"Up to one image or 4,000 words of text may be copied with a single use.",
+								"The copied script or image appears in the same hand or style as the original, though close examination may reveal its falseness with an Intelligence (Investigation) check.",
+								"Replication does not transfer magical properties of runes, glyphs, or sigils. It only reproduces their visual appearance."
+							]
+						}
+					]
+				}
+			],
+			"savingThrow": [
+				"intelligence"
+			],
+			"miscTags": [
+				"OBJ"
+			]
+		},
+		{
+			"name": "Rune of Shattered Thoughts",
+			"source": "Ancient Spells",
+			"level": 2,
+			"school": "A",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"m": "Runic oil worth 20 gp and a piece of barbed wire"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 8
+					},
+					"concentration": true
+				}
+			],
+			"meta": {
+				"ritual": true
+			},
+			"entries": [
+				"You inscribe protective runes across your mind, layering it with mental wards. While the rune lasts, any creature attempting to read your thoughts must succeed on an Intelligence saving throw against your spell save DC.",
+				{
+					"type": "entries",
+					"name": "On a Failed Save",
+					"entries": [
+						"The creature suffers 4d8 psychic damage and learns nothing."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "On a Successful Save",
+					"entries": [
+						"The creature can read your thoughts, but it still takes half damage."
+					]
+				}
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When inscribed using a rune slot above 2nd level, the damage increases by 1d8 for each slot level above 2nd."
+					]
+				}
+			],
+			"savingThrow": [
+				"intelligence"
+			],
+			"damageInflict": [
+				"psychic"
+			],
+			"miscTags": [
+				"HL"
+			]
+		},
+		{
+			"name": "Rune of Sight",
+			"source": "Ancient Spells",
+			"level": 2,
+			"school": "D",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+				"m": "Runic oil worth 25 gp"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 1
+					}
+				}
+			],
+			"meta": {
+				"ritual": true
+			},
+			"entries": [
+				"A creature inscribed with this rune gains darkvision out to 60 feet. If the target already has darkvision, its range increases by 30 feet.",
+				"At higher levels, the rune may grant see invisibility for the duration when inscribed with oil worth 100 gp."
+			],
+			"miscTags": [
+				"HL"
+			]
+		},
+		{
+			"name": "Rune of Transportation",
+			"source": "Ancient Spells",
+			"level": 2,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "minute"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+				"m": "Runic oil worth 10 gp"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "day",
+						"amount": 1
+					}
+				}
+			],
+			"meta": {
+				"ritual": true
+			},
+			"entries": [
+				"Inscribe a rune to create a teleportation target. When casting Teleport or Misty Step, you may transport to the rune instead of the usual range limit.",
+				"At higher levels, the rune lasts longer, up to 1 year if cast with a 5th-level slot."
+			],
+			"miscTags": [
+				"HL",
+				"TP"
+			]
+		},
+		{
+			"name": "Rune of Twisted Fortune",
+			"source": "Ancient Spells",
+			"level": 2,
+			"school": "D",
+			"time": [
+				{
+					"number": 1,
+					"unit": "reaction"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"components": {
+				"m": "Runic oil worth 15 gp"
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"meta": {
+				"ritual": true
+			},
+			"entries": [
+				"You inscribe this rune in the instant of fate, seizing the fortune of a nearby creature for better or worse.",
+				"When a creature within range makes an attack roll, you may invoke this rune to alter its outcome. The attack roll is made without advantage or disadvantage, regardless of the original conditions.",
+				"This effect applies only to that single attack roll."
+			]
+		},
+		{
+			"name": "Bond Item",
+			"source": "Ancient Spells",
+			"level": 3,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+				"m": "Runic oil worth 100 gp"
+			},
+			"duration": [
+				{
+					"type": "permanent",
+					"ends": [
+						"dispel"
+					]
+				}
+			],
+			"meta": {
+				"ritual": true
+			},
+			"entries": [
+				"Choose an object weighing 5 lbs. or less that is not equipped or carried by another creature. Place a magical mark on it, shunting it into an extradimensional space.",
+				"When you next cast this spell, you may summon the bonded item instead of targeting a new one. The item reappears within your reach, unaffected by the passage of time."
+			],
+			"miscTags": [
+				"OBJ"
+			]
+		},
+		{
+			"name": "Rune of Destruction",
+			"source": "Ancient Spells",
+			"level": 3,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+				"m": "Runic oil worth 25 gp"
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"meta": {
+				"ritual": true
+			},
+			"entries": [
+				"Inscribe a rune of pure destructive force on an object or surface within reach. The rune covers a 10-foot square and detonates at the end of your current turn.",
+				"Each creature in the rune's area must make a Constitution saving throw, taking 6d8 force damage on a failed save, or half as much damage on a successful one. Because the rune is placed by touch, the caster can be caught in the blast if they remain within the affected area when it detonates.",
+				"Undead and Constructs are especially vulnerable to the rune. If the rune is inscribed directly onto an Undead or Construct, that creature instead takes 10d8 force damage on a failed save, or half as much damage on a successful one."
+			],
+			"savingThrow": [
+				"constitution"
+			],
+			"damageInflict": [
+				"force"
+			],
+			"miscTags": [
+				"OBJ"
+			]
+		},
+		{
+			"name": "Rune of Planar Endowment",
+			"source": "Ancient Spells",
+			"level": 3,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "day"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+				"m": "Runic oil worth 100 gp, planar essence worth 50 gp, plus 25 gp per assisting caster"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "day",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"meta": {
+				"ritual": true
+			},
+			"entries": [
+				"This rune channels planar or elemental energy into an object, often used in the crafting of enchanted items.",
+				{
+					"type": "entries",
+					"name": "Casting Requirements",
+					"entries": [
+						{
+							"type": "list",
+							"items": [
+								"Primary Caster: Must be at least a 5th-level spellcaster and capable of Hematomancy or planar binding runes.",
+								"Secondary Casters: Optional, up to 10. Each must be proficient in Arcana, Religion, or Nature, depending on the planar energy used."
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Checks",
+					"entries": [
+						{
+							"type": "list",
+							"items": [
+								"Primary Check: Intelligence (Arcana) DC 20. The DC is reduced by 1 for every rune slot expended above 3rd, to a minimum of 15.",
+								"Secondary Checks: Each secondary caster must succeed on an Intelligence check using Arcana, Religion, or Nature, DC 15. Each success reduces instability and increases the yield."
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Outcome",
+					"entries": [
+						{
+							"type": "list",
+							"items": [
+								"Success: The object is infused with planar essence, creating magical material worth 100 gp. Each secondary caster increases this by 50 gp.",
+								"Failure: The materials are consumed, leaving only inert but still valuable base matter, which is non-magical."
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Materials",
+					"entries": [
+						{
+							"type": "list",
+							"items": [
+								"Base 50 gp of planar material essence, plus 25 gp per secondary caster."
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Notes",
+					"entries": [
+						"This ritual can create incremental magical resources but cannot directly produce finished magic items. Instead, it provides raw enchanted material to be used in crafting."
+					]
+				}
+			],
+			"miscTags": [
+				"OBJ"
+			]
+		},
+		{
+			"name": "Rune of Soulbinding",
+			"source": "Ancient Spells",
+			"level": 3,
+			"school": "N",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 90
+				}
+			},
+			"components": {
+				"m": {
+					"text": "Runic oil worth 50 gp and a diamond worth 500 gp, which is consumed",
+					"consume": true
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"meta": {
+				"ritual": true
+			},
+			"entries": [
+				"By inscribing this rune, you bind a creature's soul into a gem upon its death. The target must make a Charisma saving throw. On a failure, its soul is permanently bound to the gem while this rune is maintained.",
+				"While the soul is bound, resurrection magic of 4th level or lower fails unless you choose to release the soul. Resurrection magic of 5th level or higher can restore the creature normally, breaking the binding if the spell succeeds and any normal requirements of the resurrection spell are met.",
+				{
+					"type": "entries",
+					"name": "Additional Effects",
+					"entries": [
+						{
+							"type": "list",
+							"items": [
+								"While bound, the soul cannot be restored by resurrection magic of 4th level or lower unless the rune's inscriber allows it.",
+								"Any spell that would detect the creature instead detects the gem.",
+								"Anyone holding the gem may telepathically speak with the bound soul, though the creature is not compelled to speak truthfully."
+							]
+						}
+					]
+				}
+			],
+			"savingThrow": [
+				"charisma"
+			]
+		},
+		{
+			"name": "Rune of Null",
+			"source": "Ancient Spells",
+			"level": 4,
+			"school": "A",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"components": {
+				"m": "Runic oil worth 250 gp"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"meta": {
+				"ritual": true
+			},
+			"entries": [
+				"Inscribe this rune on a surface to suppress magic in a 10-foot-radius sphere. Any spells of 3rd level or lower cast within or entering the area are automatically dispelled.",
+				"Higher-level spells require a caster ability check against your spell save DC. Effects end when the rune fades."
+			],
+			"miscTags": [
+				"OBJ"
+			]
+		},
+		{
+			"name": "Rune of Record",
+			"source": "Ancient Spells",
+			"level": 5,
+			"school": "D",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"m": "Runic oil worth 250 gp"
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"meta": {
+				"ritual": true
+			},
+			"entries": [
+				"By inscribing this rune, you open your mind to the endless reservoir of written knowledge etched across the world. When you cast this rune, you may name a book, scroll, or piece of writing.",
+				"If the text exists anywhere within the world's record, its contents are drawn into your memory. You instantly comprehend the work as though you had studied it in full.",
+				"You do not gain the ability to understand secret codes, encrypted languages, or divine mysteries that were never meant to be read, but you do absorb the raw written knowledge exactly as it was inscribed."
+			]
+		},
+		{
+			"name": "Rune of Rewind",
+			"source": "Ancient Spells",
+			"level": 5,
+			"school": "T",
+			"time": [
+				{
+					"number": 10,
+					"unit": "minute"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+				"m": "Runic oil worth 250 gp"
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"meta": {
+				"ritual": true
+			},
+			"entries": [
+				"Inscribe a rune on an object to restore it to a prior state, repairing damage and undoing wear.",
+				"Mundane items are restored completely, such as rusted swords becoming sharpened or broken doors being rebuilt. Magical items are repaired physically but do not regain lost charges or destroyed enchantments.",
+				"This rune cannot restore items that were completely destroyed or disintegrated."
+			],
+			"miscTags": [
+				"OBJ"
+			]
+		},
+		{
+			"name": "Rune of Twisting Dimensions",
+			"source": "Ancient Spells",
+			"level": 5,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 120
+				}
+			},
+			"components": {
+				"m": "Runic oil worth 250 gp and interlocking metal rings"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 1
+					}
+				}
+			],
+			"meta": {
+				"ritual": true
+			},
+			"entries": [
+				"You inscribe this rune to warp space within a 40-foot cube.",
+				"A creature attempting to move through the ward expends all of its movement and is shunted to a random location in the cube. Roll 3d8 to determine the position along each axis. If this would place the creature in an occupied space, it is instead moved to the nearest unoccupied one.",
+				{
+					"type": "entries",
+					"name": "Additional Effects",
+					"entries": [
+						{
+							"type": "list",
+							"items": [
+								"All creatures within the cube gain three-quarters cover against all attacks.",
+								"Any ranged attack that passes through the cube is made at disadvantage.",
+								"Gravity ceases to function normally within the cube; creatures and objects drift freely."
+							]
+						}
+					]
+				}
+			],
+			"miscTags": [
+				"OBJ"
+			]
+		},
+		{
+			"name": "Rune of Overgrowth",
+			"source": "Ancient Spells",
+			"level": 6,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"m": "Runic oil worth 500 gp"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 10
+					},
+					"concentration": true
+				}
+			],
+			"meta": {
+				"ritual": true
+			},
+			"entries": [
+				"Inscribe this rune upon the ground. Plants surge in a 50-foot radius, transforming the terrain into thick overgrowth.",
+				"The area becomes difficult terrain, and creatures within must make a Strength saving throw or become restrained. Restrained creatures may repeat the save at the end of their turns."
+			],
+			"savingThrow": [
+				"strength"
+			],
+			"conditionInflict": [
+				"restrained"
+			],
+			"miscTags": [
+				"DFT"
+			]
+		},
+		{
+			"name": "Rune of Recall",
+			"source": "Ancient Spells",
+			"level": 6,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"m": "Runic oil worth 1,000 gp"
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"meta": {
+				"ritual": true
+			},
+			"entries": [
+				"This rune is linked to a prepared anchor rune of recall. When activated, the inscriber and up to 5 willing creatures within 30 feet are teleported to that anchor rune's location.",
+				"The target anchor rune must still exist and must not have been destroyed, moved, dispelled, or placed within an area that blocks teleportation.",
+				{
+					"type": "entries",
+					"name": "Preparing an Anchor Rune",
+					"entries": [
+						{
+							"type": "entries",
+							"name": "A recall anchor can be prepared by casting Rune of Recall on a fixed surface at the destination. Preparing the anchor has the following statistics",
+							"entries": [
+								{
+									"type": "list",
+									"items": [
+										"Range: Touch",
+										"Casting Time: 10 minutes",
+										"Duration: 30 days",
+										"Components: Runic oil worth 1,000 gp, consumed",
+										"Save: None"
+									]
+								}
+							]
+						},
+						"Only one anchor rune may be linked to you at a time. If you create a new anchor rune, the previous one fades. The anchor rune can be found and destroyed as a magical rune, and it can be dispelled by Dispel Magic or similar magic using the normal rules for a 6th-level spell effect."
+					]
+				}
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When the anchor is prepared using a 7th-level rune slot, it lasts 1 year. When prepared using an 8th-level rune slot, it lasts until dispelled."
+					]
+				}
+			],
+			"miscTags": [
+				"HL",
+				"OBJ",
+				"TP"
+			]
+		},
+		{
+			"name": "Rune of Severance",
+			"source": "Ancient Spells",
+			"level": 7,
+			"school": "A",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 120
+				}
+			},
+			"components": {
+				"m": "Runic oil worth 2,000 gp"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"meta": {
+				"ritual": true
+			},
+			"entries": [
+				"Inscribe this rune on a surface or object to cut off planar and teleportation effects within a 100-foot radius.",
+				"Teleportation, Plane Shift, Gate, and similar effects automatically fail when targeting or crossing this zone. Creatures attempting to leave or enter through planar travel must succeed on a Charisma saving throw or fail to cross."
+			],
+			"savingThrow": [
+				"charisma"
+			],
+			"miscTags": [
+				"OBJ",
+				"TP"
+			]
+		},
+		{
+			"name": "Rune of Spell Reversal",
+			"source": "Ancient Spells",
+			"level": 7,
+			"school": "A",
+			"time": [
+				{
+					"number": 1,
+					"unit": "reaction"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"m": "Runic oil worth 250 gp, a piece of vulcanised tree sap, and a bottle of adhesive"
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"meta": {
+				"ritual": true
+			},
+			"entries": [
+				"You inscribe a shimmering ward of runes in response to a spell targeting you or including you in its area of effect.",
+				{
+					"type": "entries",
+					"name": "Spell Resolution",
+					"entries": [
+						{
+							"type": "list",
+							"items": [
+								"If the incoming spell is 7th level or lower: The spell fails. You may choose for the magic to be reflected back at its caster or redirected to a point of your choosing within range.",
+								"If the incoming spell is 8th level or higher: Make a spellcasting ability check against DC 10 + the spell's level. On a success, the spell is reflected as above. On a failure, the rune shatters without effect."
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Ancient Warding",
+			"source": "Ancient Spells",
+			"level": 8,
+			"school": "A",
+			"time": [
+				{
+					"number": 1,
+					"unit": "hour"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"m": "Runic oil worth 10,000 gp"
+			},
+			"duration": [
+				{
+					"type": "permanent"
+				}
+			],
+			"meta": {
+				"ritual": true
+			},
+			"entries": [
+				"Target a space within range larger than a 10-foot cube. The warded space cannot be teleported into by any means. Divination targeting the warded space automatically fails.",
+				"Creatures in the Ethereal Plane cannot enter the warded space. This effect cannot be dispelled short of a Wish spell."
+			],
+			"savingThrow": [
+				"charisma"
+			],
+			"miscTags": [
+				"TP"
+			]
+		},
+		{
+			"name": "Rune of Temporal Delay",
+			"source": "Ancient Spells",
+			"level": 8,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "reaction"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"m": "Runic oil worth 1,000 gp"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "round",
+						"amount": 1
+					}
+				}
+			],
+			"meta": {
+				"ritual": true
+			},
+			"entries": [
+				"You inscribe a masterwork rune of chronomancy, bending time itself to stall incoming magic.",
+				"When a creature within 60 feet casts a spell, you may inscribe this rune as a reaction to delay its effects by one turn. The spell still consumes its slot, components, and casting time, but its results do not occur until the start of the next round.",
+				{
+					"type": "entries",
+					"name": "Notes",
+					"entries": [
+						{
+							"type": "list",
+							"items": [
+								"This rune does not counter or dispel the magic. It suspends it in time, allowing allies a chance to reposition, defend, or disrupt before the spell resolves.",
+								"If the spell targets a creature or object: The target remains locked in place as the delayed magic waits to resolve. If the target leaves range before the spell triggers, the spell fails.",
+								"If the spell targets an area: The area remains fixed, and the effect occurs as written at the start of the next round."
+							]
+						}
+					]
+				}
+			],
+			"miscTags": [
+				"OBJ"
+			]
+		}
+	]
+}
